@@ -1799,26 +1799,19 @@
 
         console.log('Kit subscription successful:', { email, tier: selectedTier, formId });
       } catch (err) {
-        // Log error but still allow download — don't block the user
-        console.warn('Kit submission error (download will still proceed):', err);
+        console.error('Kit submission error:', err);
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+        alert('Something went wrong. Please try again.');
+        return;
       }
 
-      // Trigger file download based on tier
-      const downloadUrl = selectedTier === 'full' ? CONFIG.DOWNLOAD_FULL : CONFIG.DOWNLOAD_FREE;
-      const downloadLink = document.createElement('a');
-      downloadLink.href = downloadUrl;
-      downloadLink.download = '';
-      downloadLink.style.display = 'none';
-      document.body.appendChild(downloadLink);
-      downloadLink.click();
-      document.body.removeChild(downloadLink);
-
-      // Show success message
+      // Show success message — file will be delivered via email by Kit
       const successMessage = document.getElementById('success-message');
       const packageName = selectedTier === 'free' ? 'Market Snapshot' : 'Investor Package';
       successMessage.innerHTML = `
         <div class="success-message">
-          Your ${packageName} is downloading now!
+          <strong>Check your inbox!</strong> Your ${packageName} is on its way to <strong>${email}</strong>. If you don't see it within a few minutes, check your spam folder.
         </div>
       `;
 
@@ -1827,10 +1820,10 @@
       submitBtn.textContent = originalText;
       submitBtn.disabled = false;
 
-      // Hide success message after 6 seconds
+      // Hide success message after 10 seconds
       setTimeout(() => {
         successMessage.innerHTML = '';
-      }, 6000);
+      }, 10000);
     }
 
     // ===== COOKIE CONSENT =====
