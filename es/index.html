@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0ZNZK4FBF"></script>
+  <!-- Google Ads (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17970262382"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-Y0ZNZK4FBF");
+    gtag("config", "AW-17970262382");
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -11,13 +20,13 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Análisis basado en datos de los seis distritos premium de Lima. 115,604 listados analizados. Rendimientos brutos 4.7–5.4%. Paquete de inversión gratuito con calculadora de precios.">
-  <meta name="keywords" content="inversión inmobiliaria Lima, propiedad Perú, análisis de rendimiento de alquiler, Miraflores, Barranco, San Borja, Surco, La Molina, San Isidro">
+  <meta name="description" content="Análisis basado en datos de los seis distritos premium de Lima. 115.604 listados analizados. Rendimientos brutos 4.7-5.4%. Resumen gratuito del mercado y paquete inversor con calculadora de precios.">
+  <meta name="keywords" content="inversión inmobiliaria en Lima, propiedades en Perú, análisis de rendimiento de alquiler, Miraflores, Barranco, San Borja, Surco, La Molina, San Isidro">
   <meta name="robots" content="index, follow">
   <meta name="canonical" content="https://lancerpoint.co/es/">
 
-  <meta property="og:title" content="Guía de Inversión Inmobiliaria Lima 2025 | Rendimientos y Precios por Distrito">
-  <meta property="og:description" content="Análisis basado en datos de seis distritos premium. 115,604 listados analizados. Rendimientos brutos 4.7–5.4%. Paquete inversor gratuito.">
+  <meta property="og:title" content="Guía de Inversión Inmobiliaria en Lima 2025 | Rendimientos y Precios por Distrito">
+  <meta property="og:description" content="Análisis basado en datos de los seis distritos premium de Lima. 115.604 listados analizados. Rendimientos brutos 4.7-5.4%. Resumen gratuito y paquete inversor.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://lancerpoint.co/es/">
   <meta property="og:image" content="https://lancerpoint.co/og-image.png">
@@ -26,8 +35,8 @@
   <meta property="og:image:height" content="630">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Guía de Inversión Inmobiliaria Lima 2025">
-  <meta name="twitter:description" content="Análisis basado en datos de seis distritos premium. Rendimientos brutos 4.7–5.4%.">
+  <meta name="twitter:title" content="Guía de Inversión Inmobiliaria en Lima 2025">
+  <meta name="twitter:description" content="Análisis basado en datos de los seis distritos premium de Lima. Rendimientos brutos 4.7-5.4%.">
   <meta name="twitter:image" content="https://lancerpoint.co/og-image.png">
 
   <link rel="alternate" hreflang="en" href="https://lancerpoint.co/">
@@ -39,12 +48,12 @@
   <link rel="alternate" hreflang="zh" href="https://lancerpoint.co/zh/">
   <link rel="alternate" hreflang="x-default" href="https://lancerpoint.co/">
 
-  <title>Guía de Inversión Inmobiliaria Lima 2025 | Rendimientos y Precios por Distrito</title>
+  <title>Guía de Inversión Inmobiliaria en Lima 2025 | Rendimientos y Precios por Distrito</title>
 
   <link rel="dns-prefetch" href="https://app.kit.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     /* ===== RESET & BASE ===== */
@@ -221,29 +230,6 @@
 
     .wordmark-point {
       color: #2C2825;
-    }
-
-    .nav-controls {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-    }
-
-    .language-select {
-      padding: 8px 12px;
-      border: 1px solid rgba(43, 40, 37, 0.2);
-      border-radius: 4px;
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.9rem;
-      background-color: #FDFCF9;
-      color: #6B6560;
-      cursor: pointer;
-      transition: border-color 0.3s ease;
-    }
-
-    .language-select:focus {
-      outline: none;
-      border-color: #B8965A;
     }
 
     .cta-button {
@@ -1347,23 +1333,22 @@
 </head>
 <body>
   <!-- HEADER -->
-  <header id="header" role="banner" aria-label="Encabezado del sitio">
+  <header id="header" role="banner" aria-label="Site header">
     <nav>
       <div class="wordmark">
         <span class="wordmark-lancer">Lancer</span> <span class="wordmark-point">Point</span>
       </div>
-      <div class="nav-controls">
-        <select class="language-select" onchange="changeLanguage(this.value)">
-          <option value="/es/">Select Language / Seleccionar / Scegliere / Choisir / Wählen / 選択 / 选择</option>
-          <option value="/">English</option>
-          <option value="/es/">Español</option>
-          <option value="/it/">Italiano</option>
-          <option value="/fr/">Français</option>
-          <option value="/de/">Deutsch</option>
-          <option value="/ja/">日本語</option>
-          <option value="/zh/">中文</option>
+      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+        <select onchange="if(this.value)window.location.href=this.value" aria-label="Idioma" style="padding:4px 6px;border:1px solid rgba(43,40,37,0.2);border-radius:4px;font-family:'Outfit',sans-serif;font-size:0.75rem;background:#fff;color:#2C2825;cursor:pointer;width:52px;">
+          <option value="/">EN</option>
+          <option value="/es/" selected>ES</option>
+          <option value="/it/">IT</option>
+          <option value="/fr/">FR</option>
+          <option value="/de/">DE</option>
+          <option value="/ja/">JA</option>
+          <option value="/zh/">ZH</option>
         </select>
-        <button class="cta-button" onclick="document.getElementById('get-access').scrollIntoView({ behavior: 'smooth' })">
+        <button class="cta-button" onclick="document.getElementById('get-access').scrollIntoView({ behavior: 'smooth' })" style="white-space:nowrap;">
           OBTENER LA GUÍA
         </button>
       </div>
@@ -1373,9 +1358,9 @@
   <!-- HERO SECTION -->
   <article class="hero reveal">
     <span class="hero-label">INVESTIGACIÓN DE INVERSIÓN · Q1 2025</span>
-    <h1>Guía de Inversión Inmobiliaria Lima</h1>
+    <h1>Guía de Inversión Inmobiliaria en Lima</h1>
     <p class="hero-subtitle">
-      Seis distritos premium comparados — 115,604 listados de ventas · 80,000+ registros de alquiler · Q1 2022 – Q4 2024
+      Seis distritos premium comparados — 115.604 listados de ventas · 80.000+ registros de alquiler · Q1 2022 – Q4 2024
     </p>
 
     <div class="stat-boxes">
@@ -1389,11 +1374,11 @@
       </div>
       <div class="stat-box reveal">
         <div class="stat-value">181 /mes</div>
-        <div class="stat-label">Volumen máximo de alquiler</div>
+        <div class="stat-label">Volumen máximo de alquileres</div>
       </div>
       <div class="stat-box reveal">
         <div class="stat-value">-3.9% a +2.9%</div>
-        <div class="stat-label">Diferencial de retorno total</div>
+        <div class="stat-label">Rango de retorno total</div>
       </div>
     </div>
 
@@ -1403,22 +1388,21 @@
   </article>
 
   <!-- TABLE OF CONTENTS NAV -->
-  <nav class="toc-nav reveal" aria-label="Tabla de contenidos">
+  <nav class="toc-nav reveal" aria-label="Table of contents">
     <ul>
-      <li><a href="#market-overview" class="toc-link">Descripción del Mercado</a></li>
+      <li><a href="#market-overview" class="toc-link">Resumen del Mercado</a></li>
       <li><a href="#key-finding" class="toc-link">Hallazgo Clave</a></li>
-      <li><a href="#whats-included" class="toc-link">Lo que se Incluye</a></li>
-      <li><a href="#faq" class="toc-link">Preguntas Frecuentes</a></li>
       <li><a href="#get-access" class="toc-link">Obtener Acceso</a></li>
+      <li><a href="#faq" class="toc-link">Preguntas Frecuentes</a></li>
     </ul>
   </nav>
 
   <!-- SECTION 01: MARKET OVERVIEW -->
   <section id="market-overview" class="reveal">
-    <span class="section-label">01 — Descripción del Mercado</span>
+    <span class="section-label">01 — Resumen del Mercado</span>
     <h2>Comparación de Distritos</h2>
     <p class="section-subtitle">
-      Los seis distritos premium clasificados por retorno anual estimado total
+      Los seis distritos residenciales premium, clasificados por retorno anual total estimado
     </p>
 
     <div class="table-wrapper">
@@ -1427,10 +1411,10 @@
           <tr>
             <th>Distrito</th>
             <th>Precio Medio</th>
-            <th>Rendimiento Bruto</th>
-            <th>Rendimiento Neto</th>
+            <th>Rend. Bruto</th>
+            <th>Rend. Neto</th>
             <th>Alquileres/mes</th>
-            <th>CAGR de Precio</th>
+            <th>CAGR Precio</th>
             <th>Retorno Total</th>
           </tr>
         </thead>
@@ -1499,144 +1483,31 @@
     <span class="section-label">02 — Hallazgo Clave</span>
 
     <div class="callout-block">
-      <p class="callout-main">Los edificios más antiguos (16–30 años) superan a las nuevas construcciones en rendimientos de alquiler</p>
+      <p class="callout-main">Los edificios más antiguos (16–30 años) superan a las construcciones nuevas en rendimiento de alquiler</p>
       <p class="callout-supporting">
-        La prima de precio de nueva construcción de 15–29% no se compensa con rentas proporcionalmente más altas. Los apartamentos de reventa entreguen consistentemente mejores ratios de alquiler a precio en los seis distritos.
+        La prima de precio del 15–29% en construcciones nuevas no se compensa con alquileres proporcionalmente más altos. Los apartamentos de reventa ofrecen consistentemente mejores relaciones alquiler-precio en los seis distritos.
       </p>
-      <p class="callout-source">Fuente: Análisis de 17,559 listados, Q1 2022 – Q4 2024</p>
+      <p class="callout-source">Fuente: Análisis de 17.559 listados, Q1 2022 – Q4 2024</p>
     </div>
   </section>
 
-  <!-- SECTION 03: WHAT'S INCLUDED -->
-  <section id="whats-included" class="reveal">
-    <span class="section-label">03 — Lo que se Incluye</span>
-    <h2>Todo en el Paquete Inversor gratuito</h2>
-
-    <div class="cards-grid" style="grid-template-columns: 1fr;">
-      <div class="card highlighted reveal" style="max-width: 560px; margin: 0 auto;">
-        <div class="card-label">GRATUITO — PAQUETE COMPLETO</div>
-        <h3 class="card h3">Paquete Inversor</h3>
-        <ul class="card-items" style="columns: 2; column-gap: 32px;">
-          <li>Descripción general PDF de una página</li>
-          <li>Tabla de comparación de distritos</li>
-          <li>Resumen de hallazgos clave</li>
-          <li>Presentación de 27 diapositivas</li>
-          <li>Calculadora de precios en Excel</li>
-          <li>Análisis de rendimiento de alquiler</li>
-          <li>Conjunto de datos brutos (17,559 filas)</li>
-          <li>Presentaciones de especialistas</li>
-        </ul>
-        <div class="card-divider"></div>
-        <p class="card-footer">Ingrese su correo electrónico a continuación para obtener acceso instantáneo</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 04: FAQ -->
-  <section id="faq" class="reveal">
-    <span class="section-label">04 — Preguntas Frecuentes</span>
-    <h2>Preguntas Frecuentes</h2>
-
-    <ul class="accordion">
-      <li class="accordion-item">
-        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-          <h4>¿Pueden los extranjeros comprar propiedad en Perú?</h4>
-          <span class="accordion-icon">→</span>
-        </button>
-        <div class="accordion-content">
-          <p>Sí. Perú no tiene restricciones sobre la propiedad extranjera. Los no residentes pueden comprar, vender y alquilar propiedades con los mismos derechos que los ciudadanos peruanos. La única excepción son las propiedades dentro de 50 km de las fronteras nacionales, que requieren autorización especial.</p>
-        </div>
-      </li>
-
-      <li class="accordion-item">
-        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-          <h4>¿Es la inversión inmobiliaria de Lima una buena opción en 2025?</h4>
-          <span class="accordion-icon">→</span>
-        </button>
-        <div class="accordion-content">
-          <p>Para compradores de efectivo, sí. Los rendimientos de alquiler bruto de 4.7–5.4% en distritos premium se comparan favorablemente con otras capitales latinoamericanas. Sin embargo, las tasas hipotecarias locales de 8–12% hacen que las compras apalancadas sean flujo de efectivo negativo en la mayoría de los escenarios.</p>
-        </div>
-      </li>
-
-      <li class="accordion-item">
-        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-          <h4>¿Qué distrito de Lima tiene el mejor rendimiento de alquiler?</h4>
-          <span class="accordion-icon">→</span>
-        </button>
-        <div class="accordion-content">
-          <p>Barranco lidera con rendimiento bruto de 5.4%, impulsado por precios de entrada más bajos y fuerte demanda de arrendatarios más jóvenes. Sin embargo, Miraflores ofrece los mejores rendimientos ajustados al riesgo con 181 listados de alquiler por mes — la mayor liquidez de cualquier distrito.</p>
-        </div>
-      </li>
-
-      <li class="accordion-item">
-        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-          <h4>¿Cuáles son los precios típicos de apartamentos en Miraflores?</h4>
-          <span class="accordion-icon">→</span>
-        </button>
-        <div class="accordion-content">
-          <p>El precio medio del apartamento en Miraflores es $215,000 a partir de Q3 2025. Los apartamentos de un dormitorio típicamente comienzan alrededor de $120,000, mientras que los apartamentos de tres dormitorios oscilan entre $280,000 a $450,000 dependiendo de la edad y proximidad al Malecón.</p>
-        </div>
-      </li>
-
-      <li class="accordion-item">
-        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-          <h4>¿Cómo funciona la calculadora de precios?</h4>
-          <span class="accordion-icon">→</span>
-        </button>
-        <div class="accordion-content">
-          <p>La calculadora basada en Excel utiliza un modelo de regresión multivariante entrenado en 17,559 listados de ventas reales. Ingrese su distrito objetivo, número de dormitorios, área en metros cuadrados, edad del edificio y espacios de estacionamiento para obtener una estimación de precio con intervalos de confianza.</p>
-        </div>
-      </li>
-
-      <li class="accordion-item">
-        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-          <h4>¿Es mejor comprar nueva construcción o reventa en Lima?</h4>
-          <span class="accordion-icon">→</span>
-        </button>
-        <div class="accordion-content">
-          <p>Las propiedades de reventa (16–30 años) entregan consistentemente mejores rendimientos de alquiler. Las nuevas construcciones cargan una prima de precio de 15–29% que no se compensa con rentas proporcionalmente más altas. Los datos muestran que los edificios más antiguos superan a los más nuevos para inversores enfocados en ingresos en cada distrito analizado.</p>
-        </div>
-      </li>
-
-      <li class="accordion-item">
-        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-          <h4>¿Cómo es el mercado de alquiler en Lima?</h4>
-          <span class="accordion-icon">→</span>
-        </button>
-        <div class="accordion-content">
-          <p>El mercado de alquiler premium de Lima procesó más de 80,000 listados de 2022 a 2025. Miraflores domina con 181 listados por mes, seguido por Surco (104) y San Isidro (76). Las unidades bajo 60 m² generan el ingreso de alquiler más alto por metro cuadrado en todos los distritos.</p>
-        </div>
-      </li>
-
-      <li class="accordion-item">
-        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-          <h4>¿Cómo comienzo con la inversión inmobiliaria de Lima?</h4>
-          <span class="accordion-icon">→</span>
-        </button>
-        <div class="accordion-content">
-          <p>Descargue el Paquete Inversor gratuito para análisis detallado incluyendo la calculadora de precios, desglose de rendimientos de alquiler, una presentación de 27 diapositivas, e introducciones a especialistas inmobiliarios verificados de Lima que pueden guiar su proceso de compra.</p>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- SECTION 05: GET ACCESS -->
+  <!-- SECTION 03: GET ACCESS -->
   <section id="get-access" class="reveal">
-    <span class="section-label">05 — Obtener Acceso</span>
-    <h2>Obtener el Paquete Inversor gratuito</h2>
+    <span class="section-label">03 — Obtener Acceso</span>
+    <h2>Obtén el Paquete de Inversor gratuito</h2>
     <p class="section-subtitle">
-      Todo lo que necesita para evaluar Lima — entregado a su bandeja de entrada en minutos.
+      Todo lo que necesitas para evaluar Lima — entregado a tu bandeja de entrada en minutos.
     </p>
 
     <div class="package-highlights">
       <ul class="tier-items">
-        <li>Descripción general de mercado PDF de una página</li>
-        <li>Tabla de comparación de distritos</li>
+        <li>Resumen PDF de una página del mercado</li>
+        <li>Tabla comparativa de distritos</li>
         <li>Presentación de inversión de 27 diapositivas</li>
         <li>Calculadora de precios en Excel</li>
         <li>Análisis de rendimiento de alquiler por distrito</li>
-        <li>Conjunto de datos brutos (17,559 listados)</li>
-        <li>Introducciones a especialistas verificados de Lima</li>
+        <li>Conjunto de datos brutos (17.559 listados)</li>
+        <li>Presentaciones a especialistas verificados de Lima</li>
       </ul>
     </div>
 
@@ -1648,38 +1519,33 @@
           <input
             type="email"
             id="email"
-            placeholder="su@correo.com"
+            placeholder="tu@email.com"
             required
-            aria-label="Dirección de correo electrónico"
+            aria-label="Email address"
           >
         </div>
 
         <!-- Optional lead qualification fields -->
-        <div class="lead-fields-toggle">
-          <button type="button" class="toggle-btn" onclick="toggleLeadFields()" aria-expanded="false" aria-controls="lead-fields">
-            <span class="toggle-text">Ayúdenos a personalizar su experiencia (opcional)</span>
-            <span class="toggle-arrow">›</span>
-          </button>
-        </div>
+        <p class="lead-fields-label" style="font-size:0.85rem;color:#8A8580;margin:16px 0 8px;">Ayúdanos a personalizar tu experiencia (opcional)</p>
 
-        <div id="lead-fields" class="lead-fields" style="display:none;">
+        <div id="lead-fields" class="lead-fields" style="display:block;">
           <div class="form-group">
             <label for="field-budget">Presupuesto de inversión</label>
-            <select id="field-budget" aria-label="Rango de presupuesto de inversión">
+            <select id="field-budget" aria-label="Investment budget range">
               <option value="">— Seleccionar —</option>
-              <option value="under-100k">Menos de $100,000</option>
-              <option value="100k-250k">$100,000 – $250,000</option>
-              <option value="250k-500k">$250,000 – $500,000</option>
-              <option value="500k-1m">$500,000 – $1,000,000</option>
-              <option value="over-1m">Más de $1,000,000</option>
+              <option value="under-100k">Menos de $100.000</option>
+              <option value="100k-250k">$100.000 – $250.000</option>
+              <option value="250k-500k">$250.000 – $500.000</option>
+              <option value="500k-1m">$500.000 – $1.000.000</option>
+              <option value="over-1m">Más de $1.000.000</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="field-timeline">Cronograma de compra</label>
-            <select id="field-timeline" aria-label="Cronograma de compra">
+            <label for="field-timeline">Plazo de compra</label>
+            <select id="field-timeline" aria-label="Buying timeline">
               <option value="">— Seleccionar —</option>
-              <option value="0-3mo">En los próximos 3 meses</option>
+              <option value="0-3mo">Dentro de los próximos 3 meses</option>
               <option value="3-6mo">3 – 6 meses</option>
               <option value="6-12mo">6 – 12 meses</option>
               <option value="12mo-plus">Más de 12 meses</option>
@@ -1688,22 +1554,22 @@
           </div>
 
           <div class="form-group">
-            <label for="field-goal">Objetivo de inversión principal</label>
-            <select id="field-goal" aria-label="Objetivo de inversión principal">
+            <label for="field-goal">Objetivo principal de inversión</label>
+            <select id="field-goal" aria-label="Primary investment goal">
               <option value="">— Seleccionar —</option>
-              <option value="rental-income">Ingresos de alquiler</option>
+              <option value="rental-income">Ingresos por alquiler</option>
               <option value="capital-growth">Apreciación de capital</option>
               <option value="relocation">Reubicación personal</option>
-              <option value="diversification">Diversificación de cartera</option>
+              <option value="diversification">Diversificación de portafolio</option>
               <option value="other">Otro</option>
             </select>
           </div>
 
           <div class="form-group">
             <label for="field-experience">Experiencia en inversión inmobiliaria</label>
-            <select id="field-experience" aria-label="Experiencia de inversión">
+            <select id="field-experience" aria-label="Investing experience">
               <option value="">— Seleccionar —</option>
-              <option value="first-time">Inversor principiante</option>
+              <option value="first-time">Inversor primerizo</option>
               <option value="1-3-properties">1 – 3 propiedades</option>
               <option value="4-plus">4+ propiedades</option>
               <option value="professional">Profesional / institucional</option>
@@ -1716,26 +1582,114 @@
             type="checkbox"
             id="consent-privacy"
             required
-            aria-label="Aceptar Política de Privacidad, Términos de Uso y compartición de datos"
+            aria-label="Agree to Privacy Policy, Terms of Use, and data sharing"
           >
           <label for="consent-privacy">
-            Acepto la <a href="#" onclick="openLegal('privacy-es'); return false;">Política de Privacidad</a> y <a href="#" onclick="openLegal('terms-es'); return false;">Términos de Uso</a>, y doy mi consentimiento para que mi información de contacto se comparta con especialistas verificados en propiedades de Lima y plataformas de publicidad para coincidencia de audiencia, como se describe en la <a href="/confirmed.html">divulgación de uso de datos</a>.
+            Acepto la <a href="#" onclick="openLegal('privacy-es'); return false;">Política de Privacidad</a> y los <a href="#" onclick="openLegal('terms-es'); return false;">Términos de Uso</a>, y consiento que mi información de contacto sea compartida con especialistas inmobiliarios verificados de Lima y plataformas publicitarias para coincidencia de audiencias, como se describe en la <a href="/confirmed.html">divulgación de uso de datos</a>.
           </label>
         </div>
 
         <button type="submit" class="cta-button w-full mt-24" style="width: 100%;">
-          Obtener el Paquete Inversor Gratuito →
+          Obtener el Paquete de Inversor Gratuito →
         </button>
 
         <p class="form-note">
-          Sin spam de nuestra parte. Darse de baja con un clic.
+          Sin spam de nuestra parte. Cancela tu suscripción con un clic.
         </p>
       </form>
     </div>
   </section>
 
+  <!-- SECTION 04: FAQ -->
+  <section id="faq" class="reveal">
+    <span class="section-label">04 — Preguntas Frecuentes</span>
+    <h2>Preguntas Frecuentes</h2>
+
+    <ul class="accordion">
+      <li class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+          <h4>¿Pueden los extranjeros comprar propiedades en Perú?</h4>
+          <span class="accordion-icon">→</span>
+        </button>
+        <div class="accordion-content">
+          <p>Sí. Perú no tiene restricciones sobre la propiedad extranjera. Los no residentes pueden comprar, vender y alquilar propiedades con los mismos derechos que los ciudadanos peruanos. La única excepción son las propiedades dentro de 50 km de las fronteras nacionales, que requieren autorización especial.</p>
+        </div>
+      </li>
+
+      <li class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+          <h4>¿Es Lima una buena inversión inmobiliaria en 2025?</h4>
+          <span class="accordion-icon">→</span>
+        </button>
+        <div class="accordion-content">
+          <p>Para compradores al contado, sí. Los rendimientos brutos de alquiler del 4.7–5.4% en distritos premium se comparan favorablemente con otras capitales latinoamericanas. Sin embargo, las tasas hipotecarias locales del 8–12% hacen que las compras apalancadas tengan un flujo de efectivo negativo en la mayoría de los escenarios. El mercado favorece a los compradores que pueden comprar de contado.</p>
+        </div>
+      </li>
+
+      <li class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+          <h4>¿Qué distrito de Lima tiene el mejor rendimiento de alquiler?</h4>
+          <span class="accordion-icon">→</span>
+        </button>
+        <div class="accordion-content">
+          <p>Barranco lidera con un rendimiento bruto del 5.4%, impulsado por precios de entrada más bajos y una fuerte demanda de personas más jóvenes. Sin embargo, Miraflores ofrece los mejores rendimientos ajustados al riesgo con 181 listados de alquiler por mes, la liquidez más alta de cualquier distrito.</p>
+        </div>
+      </li>
+
+      <li class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+          <h4>¿Cuáles son los precios típicos de apartamentos en Miraflores?</h4>
+          <span class="accordion-icon">→</span>
+        </button>
+        <div class="accordion-content">
+          <p>El precio medio del apartamento en Miraflores es de $215.000 a partir del Q3 2025. Las unidades de un dormitorio típicamente comienzan alrededor de $120.000, mientras que los apartamentos de tres dormitorios oscilan entre $280.000 y $450.000 dependiendo de la edad y proximidad al Malecón.</p>
+        </div>
+      </li>
+
+      <li class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+          <h4>¿Cómo funciona la calculadora de precios?</h4>
+          <span class="accordion-icon">→</span>
+        </button>
+        <div class="accordion-content">
+          <p>La calculadora basada en Excel utiliza un modelo de regresión multivariada entrenado con 17.559 listados de ventas reales. Ingresa tu distrito objetivo, número de dormitorios, área en metros cuadrados, antigüedad del edificio y espacios de estacionamiento para obtener una estimación de precio con intervalos de confianza.</p>
+        </div>
+      </li>
+
+      <li class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+          <h4>¿Es mejor comprar construcción nueva o reventa en Lima?</h4>
+          <span class="accordion-icon">→</span>
+        </button>
+        <div class="accordion-content">
+          <p>Las propiedades de reventa (16–30 años) ofrecen consistentemente mejores rendimientos de alquiler. Los nuevos desarrollos conllevan una prima de precio del 15–29% que no se compensa con alquileres proporcionalmente más altos. Los datos muestran que edificios más antiguos superan a los nuevos para inversores enfocados en ingresos en todos los distritos analizados.</p>
+        </div>
+      </li>
+
+      <li class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+          <h4>¿Cómo es el mercado de alquileres en Lima?</h4>
+          <span class="accordion-icon">→</span>
+        </button>
+        <div class="accordion-content">
+          <p>El mercado de alquiler premium de Lima procesó más de 80.000 listados de 2022 a 2025. Miraflores domina con 181 listados por mes, seguido por Surco (104) y San Isidro (76). Las unidades menores a 60 m² generan los ingresos de alquiler más altos por metro cuadrado en todos los distritos.</p>
+        </div>
+      </li>
+
+      <li class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+          <h4>¿Cómo empiezo con la inversión inmobiliaria en Lima?</h4>
+          <span class="accordion-icon">→</span>
+        </button>
+        <div class="accordion-content">
+          <p>Descarga el Paquete de Inversor gratuito para obtener análisis detallado que incluye la calculadora de precios, análisis de rendimiento de alquiler, una presentación de 27 diapositivas e introducciones con especialistas verificados de propiedades de Lima que pueden guiar tu proceso de compra.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
   <!-- FOOTER -->
-  <footer role="contentinfo" aria-label="Pie de página del sitio">
+  <footer role="contentinfo" aria-label="Site footer">
     <div class="footer-container">
       <div class="footer-left">
         <div class="wordmark">
@@ -1744,13 +1698,15 @@
       </div>
 
       <div class="footer-center">
+        <a href="#" onclick="openLegal('privacy-en'); return false;">Privacy Policy</a> ·
+        <a href="#" onclick="openLegal('terms-en'); return false;">Terms of Use</a> ·
+        <a href="#" onclick="openLegal('ccpa'); return false;">Do Not Sell or Share My Personal Information</a> ·
         <a href="#" onclick="openLegal('privacy-es'); return false;">Política de Privacidad</a> ·
-        <a href="#" onclick="openLegal('terms-es'); return false;">Términos de Uso</a> ·
-        <a href="#" onclick="openLegal('ccpa'); return false;">No Vender o Compartir Mi Información Personal</a>
+        <a href="#" onclick="openLegal('terms-es'); return false;">Términos de Uso</a>
       </div>
 
       <div class="footer-right">
-        Datos: BCRP / Urbania.pe · 2022–2025
+        Data: BCRP / Urbania.pe · 2022–2025
       </div>
     </div>
   </footer>
@@ -1758,11 +1714,11 @@
   <!-- COOKIE CONSENT BANNER -->
   <div id="cookie-banner" class="cookie-banner">
     <p class="cookie-text">
-      Utilizamos cookies para mejorar su experiencia. Las cookies no esenciales se bloquean hasta que opte por participar.
+      Usamos cookies para mejorar tu experiencia. Las cookies no esenciales están bloqueadas hasta que aceptes.
     </p>
     <div class="cookie-buttons">
-      <button class="accept" onclick="acceptCookies()">Aceptar todo</button>
-      <button class="essential" onclick="essentialCookies()">Solo esencial</button>
+      <button class="accept" onclick="acceptCookies()">Aceptar todas</button>
+      <button class="essential" onclick="essentialCookies()">Solo esenciales</button>
     </div>
   </div>
 
@@ -1775,6 +1731,44 @@
   </div>
 
   <script>
+    // ===== LOCALE AUTO-REDIRECT =====
+    (function() {
+      // Check if we're already on /es/
+      if (window.location.pathname.indexOf('/es/') === 0) {
+        sessionStorage.setItem('locale_chosen', 'es');
+        return;
+      }
+      if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') return;
+      if (sessionStorage.getItem('locale_chosen')) return;
+
+      var localeMap = { es: '/es/', it: '/it/', fr: '/fr/', de: '/de/', ja: '/ja/', zh: '/zh/' };
+
+      var browserLang = (navigator.language || navigator.userLanguage || '').split('-')[0].toLowerCase();
+      if (browserLang && browserLang !== 'en' && localeMap[browserLang]) {
+        sessionStorage.setItem('locale_chosen', browserLang);
+        window.location.href = localeMap[browserLang];
+        return;
+      }
+
+      fetch('https://ipapi.co/json/', { signal: AbortSignal.timeout(3000) })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          var countryLocale = {
+            ES: 'es', MX: 'es', AR: 'es', CO: 'es', CL: 'es', PE: 'es', EC: 'es', VE: 'es', UY: 'es', PY: 'es', BO: 'es', CR: 'es', DO: 'es', GT: 'es', HN: 'es', SV: 'es', NI: 'es', PA: 'es', CU: 'es',
+            IT: 'it', FR: 'fr', DE: 'de', AT: 'de', CH: 'de',
+            JP: 'ja', CN: 'zh', TW: 'zh', HK: 'zh'
+          };
+          var lang = countryLocale[data.country_code];
+          if (lang && localeMap[lang]) {
+            sessionStorage.setItem('locale_chosen', lang);
+            window.location.href = localeMap[lang];
+          } else {
+            sessionStorage.setItem('locale_chosen', 'en');
+          }
+        })
+        .catch(function() { sessionStorage.setItem('locale_chosen', 'en'); });
+    })();
+
     // ===== CONFIGURATION =====
     const CONFIG = {
       KIT_FORM_FREE: '9089278',
@@ -1786,10 +1780,6 @@
       DOWNLOAD_FULL: 'assets/Lima_RE_Investment_Guide.xlsx',
       DOWNLOAD_FULL_PDF: 'assets/Lima_Market_Full_Report.pdf'
     };
-
-    function changeLanguage(url) {
-      window.location.href = url;
-    }
 
     // ===== HEADER SCROLL EFFECT =====
     window.addEventListener('scroll', () => {
@@ -1880,10 +1870,10 @@
       const goal = document.getElementById('field-goal').value;
       const experience = document.getElementById('field-experience').value;
 
-      const locale = 'es';
+      const locale = document.documentElement.lang || navigator.language || 'en';
 
       if (!email || !consentPrivacy) {
-        alert('Por favor, rellene todos los campos obligatorios y acepte los términos de compartición de datos.');
+        alert('Por favor completa todos los campos requeridos y acepta los términos de uso de datos.');
         return;
       }
 
@@ -1922,7 +1912,7 @@
         console.error('Kit submission error:', err);
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
-        alert('Algo salió mal. Por favor, inténtelo de nuevo.');
+        alert('Something went wrong. Please try again.');
         return;
       }
 
@@ -1931,7 +1921,7 @@
       const successMessage = document.getElementById('success-message');
       successMessage.innerHTML = `
         <div class="success-message">
-          <strong>¡Revise su bandeja de entrada!</strong> Su Paquete Inversor está en camino a <strong>${email}</strong>. Si no lo ve en unos minutos, revise su carpeta de spam.
+          <strong>¡Revisa tu bandeja de entrada!</strong> Tu Paquete de Inversor está en camino a <strong>${email}</strong>. Si no lo ves en unos minutos, revisa tu carpeta de spam.
         </div>
       `;
 
@@ -1973,7 +1963,7 @@
       if (navigator.globalPrivacyControl === true) {
         const toast = document.createElement('div');
         toast.className = 'gpc-toast';
-        toast.textContent = 'Control de privacidad global detectado. Las cookies no esenciales se bloquean y sus datos no se compartirán.';
+        toast.textContent = 'Control de Privacidad Global detectado. Las cookies no esenciales están bloqueadas y tus datos no serán compartidos.';
         document.body.appendChild(toast);
 
         setTimeout(() => {
@@ -1986,72 +1976,168 @@
 
     // ===== LEGAL PAGES CONTENT =====
     const legalContent = {
+      'privacy-en': {
+        title: 'Privacy Policy',
+        content: `
+          <h2>Privacy Policy</h2>
+          <p><strong>Last Updated: February 2025</strong></p>
+          <p><strong>Jurisdiction: Lima, Peru</strong></p>
+
+          <h3>1. Introduction</h3>
+          <p>Lancer Point ("Company," "we," "us," or "our") operates the Lancer Point website. This Privacy Policy explains how we collect, use, disclose, and otherwise process your personal information in connection with our website and services.</p>
+
+          <h3>2. Information We Collect</h3>
+          <p>We collect the following types of information:</p>
+          <ul>
+            <li><strong>Email Address:</strong> When you download our Market Snapshot or Investor Package</li>
+            <li><strong>Cookies:</strong> Non-essential cookies stored with your consent</li>
+            <li><strong>Usage Data:</strong> Pages visited, time spent, device type, IP address (anonymized)</li>
+            <li><strong>Contact Preferences:</strong> Your consent choices and tier selection</li>
+          </ul>
+
+          <h3>3. How We Use Your Information</h3>
+          <p>We use your information to: deliver the Market Snapshot or Investor Package you requested, send transactional emails about your download, improve our website and content based on usage patterns, share your contact info with vetted Lima property specialists (only if you consent), and comply with legal obligations.</p>
+
+          <h3>4. Data Sharing & Partners</h3>
+          <p>If you consent to data sharing and select the Investor Package, we will share your email address and contact preferences with vetted Lima property specialists, brokers, and property managers.</p>
+
+          <h3>5. Data Retention</h3>
+          <p>We retain your email address for 36 months unless you request deletion.</p>
+
+          <h3>6. Cookies & Tracking</h3>
+          <p>We use cookies to track your consent preferences and website usage. Essential cookies are always active. Non-essential cookies require your explicit consent via the cookie banner.</p>
+
+          <h3>7. Global Privacy Control (GPC)</h3>
+          <p>If you enable GPC in your browser, we will respect that signal and disable non-essential cookies and data sharing.</p>
+
+          <h3>8. Your Rights</h3>
+          <p>You have the right to: access your personal information, request correction or deletion of your data, opt out of data sharing with partners, unsubscribe from transactional emails, and request a copy of your data in a portable format.</p>
+
+          <h3>9. Security</h3>
+          <p>We use industry-standard security measures (SSL encryption, secure servers) to protect your information.</p>
+
+          <h3>10. Children's Privacy</h3>
+          <p>Our services are not directed to individuals under 18.</p>
+
+          <h3>11. Changes to This Policy</h3>
+          <p>We may update this Privacy Policy periodically.</p>
+
+          <h3>12. Third-Party Links</h3>
+          <p>Our website may link to third-party sites. We are not responsible for their privacy practices.</p>
+
+          <h3>13. Contact Us</h3>
+          <p>For privacy questions, contact: Lancer Point Privacy Team, Email: hello@lancerpoint.co</p>
+        `
+      },
+
+      'terms-en': {
+        title: 'Terms of Use',
+        content: `
+          <h2>Terms of Use</h2>
+          <p><strong>Last Updated: February 2025</strong></p>
+
+          <h3>1. Agreement to Terms</h3>
+          <p>By accessing and using the Lancer Point website, you agree to be bound by these Terms of Use.</p>
+
+          <h3>2. License & Use Restrictions</h3>
+          <p>We grant you a limited, non-exclusive, non-transferable license to access the website and download materials for personal, non-commercial use only.</p>
+
+          <h3>3. Data Accuracy & Disclaimers</h3>
+          <p>The research materials are based on data from BCRP, Urbania.pe, and other public sources. <strong>This is not financial advice.</strong></p>
+
+          <h3>4. Investment Risk Disclaimer</h3>
+          <p>Real estate investment carries significant risk, including loss of principal.</p>
+
+          <h3>5. Limitation of Liability</h3>
+          <p>To the maximum extent permitted by law, Lancer Point is not liable for damages from use of this website.</p>
+
+          <h3>6. Intellectual Property Rights</h3>
+          <p>All content is owned by Lancer Point and protected by copyright.</p>
+
+          <h3>7. User Conduct</h3>
+          <p>You agree not to engage in unlawful activity, harassment, or attempts to gain unauthorized access.</p>
+
+          <h3>8. Partner Introductions</h3>
+          <p>These are independent third parties. We do not guarantee their performance.</p>
+
+          <h3>9. Indemnification</h3>
+          <p>You agree to indemnify Lancer Point from any claims arising from your use of this website.</p>
+
+          <h3>10. Termination & Severability</h3>
+          <p>We may suspend or terminate your access if you violate these Terms.</p>
+
+          <h3>11. Contact & Dispute Resolution</h3>
+          <p>For disputes, contact hello@lancerpoint.co before pursuing legal action.</p>
+        `
+      },
+
+      'ccpa': {
+        title: 'Do Not Sell or Share My Personal Information',
+        content: `
+          <h2>Do Not Sell or Share My Personal Information</h2>
+          <p><strong>California Consumer Privacy Act (CCPA) Rights</strong></p>
+
+          <h3>Right to Know</h3>
+          <p>You have the right to request what personal information we collect about you.</p>
+
+          <h3>Right to Delete</h3>
+          <p>You may request deletion of your personal information with limited exceptions.</p>
+
+          <h3>Right to Opt-Out</h3>
+          <p>You can opt out at any time or enable Global Privacy Control in your browser.</p>
+
+          <h3>Right to Non-Discrimination</h3>
+          <p>We will not discriminate for exercising CCPA rights.</p>
+
+          <h3>How to Submit Requests</h3>
+          <p>Email hello@lancerpoint.co with your request. We will respond within 45 days.</p>
+        `
+      },
+
       'privacy-es': {
         title: 'Política de Privacidad',
         content: `
           <h2>Política de Privacidad</h2>
           <p><strong>Última Actualización: Febrero 2025</strong></p>
-          <p><strong>Jurisdicción: ${CONFIG.JURISDICTION}</strong></p>
 
           <h3>1. Introducción</h3>
-          <p>Lancer Point ("Empresa," "nosotros," "nuestro") opera el sitio web Lancer Point. Esta Política de Privacidad explica cómo recopilamos, utilizamos, divulgamos y procesamos su información personal en relación con nuestro sitio web y servicios.</p>
+          <p>Lancer Point opera el sitio web Lancer Point. Esta Política de Privacidad explica cómo recopilamos y procesamos su información personal.</p>
 
           <h3>2. Información que Recopilamos</h3>
-          <p>Recopilamos los siguientes tipos de información:</p>
-          <ul>
-            <li><strong>Dirección de Correo Electrónico:</strong> Cuando descarga nuestro Resumen del Mercado o Paquete Inversor</li>
-            <li><strong>Cookies:</strong> Cookies no esenciales almacenadas con su consentimiento</li>
-            <li><strong>Datos de Uso:</strong> Páginas visitadas, tiempo dedicado, tipo de dispositivo, dirección IP (anonimizada)</li>
-            <li><strong>Preferencias de Contacto:</strong> Sus opciones de consentimiento y selección de nivel</li>
-          </ul>
+          <p>Recopilamos dirección de correo, cookies, datos de uso, y preferencias de contacto.</p>
 
           <h3>3. Cómo Utilizamos Su Información</h3>
-          <p>Utilizamos su información para:</p>
-          <ul>
-            <li>Entregar el Resumen del Mercado o Paquete Inversor que solicitó</li>
-            <li>Enviar correos electrónicos transaccionales sobre su descarga</li>
-            <li>Mejorar nuestro sitio web y contenido basado en patrones de uso</li>
-            <li>Compartir su información de contacto con especialistas inmobiliarios verificados de Lima (solo si da su consentimiento y selecciona el Paquete Inversor)</li>
-            <li>Cumplir con obligaciones legales</li>
-          </ul>
+          <p>Utilizamos su información para entregar los materiales solicitados, enviar correos transaccionales, mejorar nuestro sitio, y compartir con especialistas verificados.</p>
 
           <h3>4. Compartición de Datos y Socios</h3>
-          <p>Si consiente en la compartición de datos y selecciona el Paquete Inversor, compartiremos su dirección de correo electrónico y preferencias de contacto con especialistas inmobiliarios verificados de Lima, corredores y administradores de propiedades. Estos socios se pondrán en contacto con usted directamente sobre oportunidades de inversión. Usted controla esta compartición a través de la casilla de consentimiento en el formulario.</p>
+          <p>Compartiremos su información con especialistas inmobiliarios verificados de Lima si lo autoriza.</p>
 
           <h3>5. Retención de Datos</h3>
-          <p>Retenemos su dirección de correo electrónico durante 36 meses a menos que solicite la eliminación. Los datos de uso se retienen durante 12 meses y luego se anonimizan. Puede solicitar la eliminación en cualquier momento escribiendo a ${CONFIG.CONTACT_EMAIL}.</p>
+          <p>Retenemos su correo durante 36 meses a menos que solicite eliminación.</p>
 
           <h3>6. Cookies y Seguimiento</h3>
-          <p>Utilizamos cookies para rastrear sus preferencias de consentimiento y uso del sitio web. Las cookies esenciales siempre están activas. Las cookies no esenciales requieren su consentimiento explícito a través del banner de cookies. Puede administrar las preferencias de cookies en la configuración de su navegador en cualquier momento.</p>
+          <p>Utilizamos cookies para rastrear consentimiento y uso del sitio.</p>
 
           <h3>7. Control de Privacidad Global (GPC)</h3>
-          <p>Si habilita GPC en su navegador, respetaremos esa señal y deshabilitaremos cookies no esenciales y compartición de datos, independientemente de sus opciones anteriores.</p>
+          <p>Si habilita GPC, respetaremos esa señal y deshabilitaremos cookies no esenciales.</p>
 
           <h3>8. Sus Derechos</h3>
-          <p>Tiene derecho a:</p>
-          <ul>
-            <li>Acceder a su información personal</li>
-            <li>Solicitar corrección o eliminación de sus datos</li>
-            <li>Optar por no compartir datos con socios</li>
-            <li>Darse de baja de correos transaccionales (enlace de un clic en todos los correos)</li>
-            <li>Solicitar una copia de sus datos en formato portátil</li>
-          </ul>
+          <p>Tiene derecho a acceder, solicitar corrección o eliminación, optar por no compartir, y darse de baja de correos.</p>
 
           <h3>9. Seguridad</h3>
-          <p>Utilizamos medidas de seguridad estándar de la industria (encriptación SSL, servidores seguros) para proteger su información. Sin embargo, ningún método es 100% seguro. Si sospecha una violación, contacte inmediatamente a ${CONFIG.CONTACT_EMAIL}.</p>
+          <p>Utilizamos encriptación SSL y servidores seguros para proteger su información.</p>
 
           <h3>10. Privacidad de Menores</h3>
-          <p>Nuestros servicios no están dirigidos a menores de 18 años. No recopilamos información de menores intencionalmente. Si nos enteramos de tal recopilación, eliminaremos la información de inmediato.</p>
+          <p>Nuestros servicios no están dirigidos a menores de 18 años.</p>
 
           <h3>11. Cambios en Esta Política</h3>
-          <p>Podemos actualizar esta Política de Privacidad periódicamente. Los cambios materiales se notificarán por correo electrónico a los usuarios con suscripciones activas. Su uso continuo del sitio web implica aceptación de las actualizaciones.</p>
+          <p>Podemos actualizar esta política periódicamente.</p>
 
           <h3>12. Enlaces de Terceros</h3>
-          <p>Nuestro sitio web puede contener enlaces a sitios de terceros (p. ej., plataformas de propiedades, servicios bancarios). No somos responsables de sus prácticas de privacidad. Revise sus políticas antes de compartir información.</p>
+          <p>No somos responsables de las prácticas de privacidad de terceros.</p>
 
           <h3>13. Contáctenos</h3>
-          <p>Para preguntas de privacidad, solicitudes de datos o para presentar una queja, contacte:</p>
-          <p><strong>Equipo de Privacidad de Lancer Point</strong><br>Correo electrónico: ${CONFIG.CONTACT_EMAIL}<br>Jurisdicción: ${CONFIG.JURISDICTION}</p>
+          <p>Correo electrónico: hello@lancerpoint.co</p>
         `
       },
 
@@ -2060,135 +2146,39 @@
         content: `
           <h2>Términos de Uso</h2>
           <p><strong>Última Actualización: Febrero 2025</strong></p>
-          <p><strong>Jurisdicción: ${CONFIG.JURISDICTION}</strong></p>
 
           <h3>1. Acuerdo de Términos</h3>
-          <p>Al acceder y usar el sitio web Lancer Point, usted acepta estar vinculado por estos Términos de Uso. Si no acepta, no use el sitio web.</p>
+          <p>Al acceder al sitio, usted acepta estos Términos de Uso.</p>
 
           <h3>2. Licencia y Restricciones de Uso</h3>
-          <p>Le otorgamos una licencia limitada, no exclusiva e intransferible para acceder al sitio web y descargar el Resumen del Mercado o Paquete Inversor solo para uso personal y no comercial. Usted no puede:</p>
-          <ul>
-            <li>Reproducir, modificar o distribuir el contenido sin permiso</li>
-            <li>Usar bots o herramientas automatizadas para extraer datos del sitio web</li>
-            <li>Hacer ingeniería inversa en la calculadora de precios o modelos de datos</li>
-            <li>Vender o sublicenciar los materiales de investigación</li>
-            <li>Usar los materiales para ventaja comercial sin un acuerdo de licencia</li>
-          </ul>
+          <p>Le otorgamos una licencia limitada para acceso y descarga personal, no comercial.</p>
 
           <h3>3. Precisión de Datos y Descargos de Responsabilidad</h3>
-          <p>Los materiales de investigación se basan en datos del BCRP, Urbania.pe y otras fuentes públicas. Si bien nos esforzamos por la precisión, no hacemos garantías sobre:</p>
-          <ul>
-            <li>Precisión, completitud o actualidad de los datos</li>
-            <li>Rendimiento futuro del mercado o retornos de inversión</li>
-            <li>Idoneidad para sus objetivos específicos de inversión</li>
-          </ul>
-          <p><strong>Esto no es asesoramiento financiero.</strong> Consulte a un asesor financiero autorizado antes de tomar decisiones de inversión.</p>
+          <p><strong>Esto no es asesoramiento financiero.</strong> Consulte a un asesor autorizado.</p>
 
           <h3>4. Descargo de Responsabilidad de Riesgo de Inversión</h3>
-          <p>La inversión inmobiliaria conlleva riesgos significativos, incluida la pérdida del principal. El rendimiento pasado no garantiza resultados futuros. Las condiciones del mercado, tipos de cambio y factores políticos en Perú pueden cambiar rápidamente. Todas las cifras de rendimiento son estimaciones históricas y pueden no reflejar el rendimiento actual o futuro.</p>
+          <p>La inversión inmobiliaria conlleva riesgos significativos.</p>
 
           <h3>5. Limitación de Responsabilidad</h3>
-          <p>En la máxima medida permitida por la ley, Lancer Point no es responsable de:</p>
-          <ul>
-            <li>Daños indirectos, incidentales, consecuentes o punitivos</li>
-            <li>Pérdida de ganancias, ingresos, datos u oportunidades comerciales</li>
-            <li>Pérdidas de inversión o toma de decisiones deficiente basada en nuestra investigación</li>
-            <li>Interrupciones del sitio web, errores o virus</li>
-          </ul>
-          <p>Nuestra responsabilidad total se limita al monto que pagó por los materiales (cero si recibió la versión gratuita).</p>
+          <p>No somos responsables por daños indirectos o pérdidas de inversión.</p>
 
           <h3>6. Derechos de Propiedad Intelectual</h3>
-          <p>Todo el contenido, incluyendo texto, análisis, compilaciones de datos y visualizaciones, es propiedad de Lancer Point o nuestros socios de datos y está protegido por derechos de autor. La reproducción o distribución no autorizada está prohibida.</p>
+          <p>Todo el contenido está protegido por derechos de autor.</p>
 
           <h3>7. Conducta del Usuario</h3>
-          <p>Usted acepta no:</p>
-          <ul>
-            <li>Participar en actividades ilícitas o fraude</li>
-            <li>Acosar, difamar o amenazar a otros usuarios o personal</li>
-            <li>Intentar acceso no autorizado al sitio web</li>
-            <li>Cargar virus, malware o código disruptivo</li>
-          </ul>
+          <p>Usted acepta no participar en actividades ilícitas o fraude.</p>
 
           <h3>8. Presentaciones de Socios</h3>
-          <p>Si selecciona el Paquete Inversor y consiente en la compartición de datos, lo presentaremos con especialistas inmobiliarios verificados de Lima. Estos son terceros independientes, y no garantizamos su desempeño, honestidad o estado de licencia. Le recomendamos realizar debida diligencia antes de contratar a cualquier proveedor de servicios.</p>
+          <p>Los especialistas son terceros independientes. Realice debida diligencia.</p>
 
           <h3>9. Indemnización</h3>
-          <p>Usted acepta indemnizar y eximir de responsabilidad a Lancer Point, sus fundadores, empleados y socios de cualquier reclamación, daño o costo (incluyendo honorarios legales) que surjan de:</p>
-          <ul>
-            <li>Su uso del sitio web o materiales</li>
-            <li>Su violación de estos Términos</li>
-            <li>Sus decisiones de inversión basadas en nuestra investigación</li>
-            <li>Sus disputas con especialistas socios</li>
-          </ul>
+          <p>Usted acepta indemnizar a Lancer Point de cualquier reclamación.</p>
 
           <h3>10. Terminación y Divisibilidad</h3>
-          <p>Podemos suspender o terminar su acceso si viola estos Términos. Si alguna disposición se considera inválida, las disposiciones restantes continúan en efecto. Estos Términos se rigen por las leyes de ${CONFIG.JURISDICTION}.</p>
+          <p>Podemos suspender su acceso si viola estos Términos.</p>
 
           <h3>11. Contacto y Resolución de Disputas</h3>
-          <p>Para disputas, contacte ${CONFIG.CONTACT_EMAIL} antes de emprender acciones legales. Intentaremos resolver en 30 días.</p>
-        `
-      },
-
-      'ccpa': {
-        title: 'No Vender o Compartir Mi Información Personal',
-        content: `
-          <h2>No Vender o Compartir Mi Información Personal</h2>
-          <p><strong>Fecha Efectiva: Febrero 2025</strong></p>
-
-          <h3>Derechos de la Ley de Privacidad del Consumidor de California (CCPA)</h3>
-          <p>Si es residente de California, la CCPA le otorga derechos específicos con respecto a su información personal:</p>
-
-          <h3>Derecho a Saber</h3>
-          <p>Tiene el derecho de solicitar qué información personal recopilamos, utilizamos y compartimos sobre usted.</p>
-
-          <h3>Derecho a Eliminar</h3>
-          <p>Puede solicitar la eliminación de su información personal, con excepciones limitadas (p. ej., si es necesario para el cumplimiento legal).</p>
-
-          <h3>Derecho a Optar por No Participar en Venta/Compartición</h3>
-          <p>Lancer Point no "vende" información personal en el sentido tradicional. Sin embargo, compartir su correo electrónico con especialistas inmobiliarios de Lima puede constituir "compartición" bajo CCPA si la utilizan para marketing dirigido. Puede:</p>
-          <ul>
-            <li>Optar por no participar en cualquier momento desuscribiéndose a través del enlace en cualquier correo electrónico — esto también lo elimina de audiencias de publicidad</li>
-            <li>Solicitar exclusión voluntaria por escrito a ${CONFIG.CONTACT_EMAIL} en cualquier momento</li>
-            <li>Habilitar Control de Privacidad Global (GPC) en su navegador</li>
-          </ul>
-
-          <h3>Derecho a No Discriminación</h3>
-          <p>No discriminaremos contra usted por ejercer derechos CCPA negando servicios, cobrando precios más altos, o proporcionando servicio de menor calidad — excepto donde lo permite la ley (p. ej., si optar por no compartir datos afecta el Paquete Inversor).</p>
-
-          <h3>Derecho a Corrección</h3>
-          <p>Puede solicitar corrección de información personal inexacta.</p>
-
-          <h3>Agente Autorizado</h3>
-          <p>Puede autorizar a un agente para presentar solicitudes CCPA en su nombre. Verificaremos la autoridad del agente.</p>
-
-          <h3>Cómo Presentar una Solicitud</h3>
-          <p>Envíe un correo electrónico a ${CONFIG.CONTACT_EMAIL} con:</p>
-          <ul>
-            <li>Su nombre y dirección de correo electrónico</li>
-            <li>Tipo de solicitud (Saber, Eliminar, Optar por No Participar, Corrección)</li>
-            <li>Cualquier documentación de apoyo</li>
-          </ul>
-          <p>Responderemos dentro de 45 días. Puede recibir dos solicitudes gratuitas por año calendario.</p>
-
-          <h3>Datos que Recopilamos Bajo CCPA</h3>
-          <ul>
-            <li>Dirección de correo electrónico</li>
-            <li>Selección de nivel (Gratuito/Completo)</li>
-            <li>Preferencias de consentimiento</li>
-            <li>Dirección IP y tipo de dispositivo (anonimizado)</li>
-            <li>Identificadores de cookies</li>
-          </ul>
-
-          <h3>Categorías de Terceros con Los Que Compartimos</h3>
-          <p>Si consiente en el Paquete Inversor, podemos compartir con:</p>
-          <ul>
-            <li>Corredores inmobiliarios y agentes en Lima</li>
-            <li>Empresas de administración de propiedades</li>
-            <li>Proveedores de servicios inmobiliarios relacionados</li>
-          </ul>
-
-          <h3>Sus Solicitudes de Derechos CCPA</h3>
-          <p>Tiene el derecho de presentar solicitudes por correo electrónico. No cobraremos una tarifa por solicitudes razonables. Si denegamos una solicitud, explicaremos por qué.</p>
+          <p>Contacte hello@lancerpoint.co antes de acciones legales.</p>
         `
       }
     };
@@ -2225,6 +2215,21 @@
       checkGPC();
       updateActiveLink();
     });
+  </script>
+
+  <!-- JSON-LD STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Guía de Inversión Inmobiliaria en Lima 2025",
+    "description": "Análisis basado en datos de los seis distritos premium de Lima.",
+    "image": "https://lancerpoint.co/og-image.png",
+    "author": {"@type": "Organization","name": "Lancer Point"},
+    "publisher": {"@type": "Organization","name": "Lancer Point","url": "https://lancerpoint.co"},
+    "datePublished": "2025-01-01",
+    "dateModified": "2025-02-22"
+  }
   </script>
 </body>
 </html>
