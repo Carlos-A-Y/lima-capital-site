@@ -792,6 +792,92 @@
       display: none;
     }
 
+    /* ===== PACKAGE HIGHLIGHTS ===== */
+    .package-highlights {
+      max-width: 500px;
+      margin: 0 auto 32px;
+      background: #fff;
+      border: 1px solid rgba(43, 40, 37, 0.1);
+      border-radius: 8px;
+      padding: 24px 32px;
+    }
+
+    .package-highlights .tier-items {
+      columns: 2;
+      column-gap: 24px;
+    }
+
+    /* ===== LEAD QUALIFICATION FIELDS ===== */
+    .lead-fields-toggle {
+      margin-bottom: 16px;
+    }
+
+    .toggle-btn {
+      background: none;
+      border: 1px solid rgba(43, 40, 37, 0.12);
+      border-radius: 6px;
+      padding: 10px 16px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.9rem;
+      color: #8B7E79;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .toggle-btn:hover {
+      border-color: #B8965A;
+      color: #6B6560;
+    }
+
+    .toggle-arrow {
+      font-size: 1.1rem;
+      transition: transform 0.2s ease;
+    }
+
+    .toggle-btn[aria-expanded="true"] .toggle-arrow {
+      transform: rotate(90deg);
+    }
+
+    .lead-fields {
+      padding-bottom: 8px;
+    }
+
+    .lead-fields .form-group {
+      margin-bottom: 16px;
+    }
+
+    .lead-fields label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #2C2825;
+      font-size: 0.9rem;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid rgba(43, 40, 37, 0.2);
+      border-radius: 4px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      color: #2C2825;
+      background-color: #fff;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+      appearance: auto;
+    }
+
+    select:focus {
+      outline: none;
+      border-color: #B8965A;
+      box-shadow: 0 0 0 3px rgba(184, 150, 90, 0.1);
+    }
+
     .hidden-consent.visible {
       display: flex;
     }
@@ -1384,30 +1470,13 @@
   <!-- SECTION 03: WHAT'S INCLUDED -->
   <section id="whats-included" class="reveal">
     <span class="section-label">03 — What's Included</span>
-    <h2>Two ways to access the research</h2>
+    <h2>Everything in the free Investor Package</h2>
 
-    <div class="cards-grid">
-      <div class="card reveal">
-        <div class="card-label">FREE</div>
-        <h3 class="card h3">Market Snapshot</h3>
-        <ul class="card-items">
-          <li>One-page PDF overview</li>
-          <li>District comparison table</li>
-          <li>Key findings summary</li>
-          <li class="locked">27-slide presentation</li>
-          <li class="locked">Excel pricing calculator</li>
-          <li class="locked">Rental yield analysis</li>
-          <li class="locked">Raw dataset (17,559 rows)</li>
-          <li class="locked">Specialist introductions</li>
-        </ul>
-        <div class="card-divider"></div>
-        <p class="card-footer">Email + Privacy Policy only</p>
-      </div>
-
-      <div class="card highlighted reveal">
-        <div class="card-label">FULL</div>
+    <div class="cards-grid" style="grid-template-columns: 1fr;">
+      <div class="card highlighted reveal" style="max-width: 560px; margin: 0 auto;">
+        <div class="card-label">FREE — COMPLETE PACKAGE</div>
         <h3 class="card h3">Investor Package</h3>
-        <ul class="card-items">
+        <ul class="card-items" style="columns: 2; column-gap: 32px;">
           <li>One-page PDF overview</li>
           <li>District comparison table</li>
           <li>Key findings summary</li>
@@ -1418,7 +1487,7 @@
           <li>Specialist introductions</li>
         </ul>
         <div class="card-divider"></div>
-        <p class="card-footer">Includes partner data sharing</p>
+        <p class="card-footer">Enter your email below to get instant access</p>
       </div>
     </div>
   </section>
@@ -1505,7 +1574,7 @@
           <span class="accordion-icon">→</span>
         </button>
         <div class="accordion-content">
-          <p>Download the free Market Snapshot for a quick overview, or get the full Investor Package for detailed analysis including the pricing calculator, rental yield breakdowns, and introductions to vetted Lima property specialists who can guide your purchase process.</p>
+          <p>Download the free Investor Package for detailed analysis including the pricing calculator, rental yield breakdowns, a 27-slide presentation, and introductions to vetted Lima property specialists who can guide your purchase process.</p>
         </div>
       </li>
     </ul>
@@ -1514,38 +1583,21 @@
   <!-- SECTION 05: GET ACCESS -->
   <section id="get-access" class="reveal">
     <span class="section-label">05 — Get Access</span>
-    <h2>Choose your package</h2>
+    <h2>Get the free Investor Package</h2>
     <p class="section-subtitle">
-      Both options are free. The Investor Package includes specialist introductions — which requires sharing your contact info with our vetted partners.
+      Everything you need to evaluate Lima — delivered to your inbox in minutes.
     </p>
 
-    <div class="tier-cards">
-      <div class="tier-card" onclick="selectTier('free')">
-        <div class="tier-radio"></div>
-        <div class="tier-label">FREE</div>
-        <h3 class="tier-title">Market Snapshot</h3>
-        <ul class="tier-items">
-          <li>One-page PDF overview</li>
-          <li>District comparison table</li>
-          <li>Key findings summary</li>
-        </ul>
-      </div>
-
-      <div class="tier-card highlighted" onclick="selectTier('full')">
-        <div class="tier-radio"></div>
-        <div class="tier-label">FULL</div>
-        <h3 class="tier-title">Investor Package</h3>
-        <ul class="tier-items">
-          <li>One-page PDF overview</li>
-          <li>District comparison table</li>
-          <li>Key findings summary</li>
-          <li>27-slide presentation</li>
-          <li>Excel pricing calculator</li>
-          <li>Rental yield analysis</li>
-          <li>Raw dataset (17,559 rows)</li>
-          <li>Specialist introductions</li>
-        </ul>
-      </div>
+    <div class="package-highlights">
+      <ul class="tier-items">
+        <li>One-page PDF market overview</li>
+        <li>District comparison table</li>
+        <li>27-slide investment presentation</li>
+        <li>Excel pricing calculator</li>
+        <li>Rental yield analysis by district</li>
+        <li>Raw dataset (17,559 listings)</li>
+        <li>Introductions to vetted Lima specialists</li>
+      </ul>
     </div>
 
     <div class="form-container">
@@ -1562,31 +1614,77 @@
           >
         </div>
 
+        <!-- Optional lead qualification fields -->
+        <div class="lead-fields-toggle">
+          <button type="button" class="toggle-btn" onclick="toggleLeadFields()" aria-expanded="false" aria-controls="lead-fields">
+            <span class="toggle-text">Help us tailor your experience (optional)</span>
+            <span class="toggle-arrow">›</span>
+          </button>
+        </div>
+
+        <div id="lead-fields" class="lead-fields" style="display:none;">
+          <div class="form-group">
+            <label for="field-budget">Investment budget</label>
+            <select id="field-budget" aria-label="Investment budget range">
+              <option value="">— Select —</option>
+              <option value="under-100k">Under $100,000</option>
+              <option value="100k-250k">$100,000 – $250,000</option>
+              <option value="250k-500k">$250,000 – $500,000</option>
+              <option value="500k-1m">$500,000 – $1,000,000</option>
+              <option value="over-1m">Over $1,000,000</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="field-timeline">Buying timeline</label>
+            <select id="field-timeline" aria-label="Buying timeline">
+              <option value="">— Select —</option>
+              <option value="0-3mo">Within the next 3 months</option>
+              <option value="3-6mo">3 – 6 months</option>
+              <option value="6-12mo">6 – 12 months</option>
+              <option value="12mo-plus">More than 12 months</option>
+              <option value="exploring">Just exploring</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="field-goal">Primary investment goal</label>
+            <select id="field-goal" aria-label="Primary investment goal">
+              <option value="">— Select —</option>
+              <option value="rental-income">Rental income</option>
+              <option value="capital-growth">Capital appreciation</option>
+              <option value="relocation">Personal relocation</option>
+              <option value="diversification">Portfolio diversification</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="field-experience">Real estate investing experience</label>
+            <select id="field-experience" aria-label="Investing experience">
+              <option value="">— Select —</option>
+              <option value="first-time">First-time investor</option>
+              <option value="1-3-properties">1 – 3 properties</option>
+              <option value="4-plus">4+ properties</option>
+              <option value="professional">Professional / institutional</option>
+            </select>
+          </div>
+        </div>
+
         <div class="checkbox-group">
           <input
             type="checkbox"
             id="consent-privacy"
             required
-            aria-label="Agree to Privacy Policy and Terms of Use"
+            aria-label="Agree to Privacy Policy, Terms of Use, and data sharing"
           >
           <label for="consent-privacy">
-            I agree to the <a href="#" onclick="openLegal('privacy-en'); return false;">Privacy Policy</a> and <a href="#" onclick="openLegal('terms-en'); return false;">Terms of Use.</a>
-          </label>
-        </div>
-
-        <div id="consent-specialist" class="checkbox-group hidden-consent">
-          <input
-            type="checkbox"
-            id="consent-sharing"
-            aria-label="Consent to contact sharing"
-          >
-          <label for="consent-sharing">
-            I consent to having my contact information shared with vetted Lima property specialists (brokers, property managers, and related services) so they can assist with my investment.
+            I agree to the <a href="#" onclick="openLegal('privacy-en'); return false;">Privacy Policy</a> and <a href="#" onclick="openLegal('terms-en'); return false;">Terms of Use</a>, and I consent to having my contact information shared with vetted Lima property specialists and advertising platforms for audience matching, as described in the <a href="/confirmed.html">data-use disclosure</a>.
           </label>
         </div>
 
         <button type="submit" class="cta-button w-full mt-24" style="width: 100%;">
-          Get the Investor Package →
+          Get the Free Investor Package →
         </button>
 
         <p class="form-note">
@@ -1652,7 +1750,7 @@
     };
 
     // ===== STATE MANAGEMENT =====
-    let selectedTier = 'full';
+    // Single-tier: all submissions go to the full Investor Package
 
     // ===== HEADER SCROLL EFFECT =====
     window.addEventListener('scroll', () => {
@@ -1723,46 +1821,14 @@
       }
     }
 
-    // ===== TIER SELECTION =====
-    function selectTier(tier) {
-      selectedTier = tier;
-
-      // Update card styling
-      document.querySelectorAll('.tier-card').forEach(card => {
-        card.classList.remove('selected');
-      });
-
-      const selectedCard = document.querySelector(`.tier-card[onclick*="'${tier}'"]`);
-      if (selectedCard) {
-        selectedCard.classList.add('selected');
-      }
-
-      // Show/hide consent checkbox 2
-      const consentSpecialist = document.getElementById('consent-specialist');
-      const consentSharing = document.getElementById('consent-sharing');
-
-      if (tier === 'full') {
-        consentSpecialist.classList.add('visible');
-        consentSharing.required = true;
-      } else {
-        consentSpecialist.classList.remove('visible');
-        consentSharing.required = false;
-        consentSharing.checked = false;
-      }
-
-      // Update button text
-      const button = document.querySelector('.cta-button[type="submit"]');
-      if (tier === 'free') {
-        button.textContent = 'Get the Market Snapshot →';
-      } else {
-        button.textContent = 'Get the Investor Package →';
-      }
+    // ===== LEAD FIELDS TOGGLE =====
+    function toggleLeadFields() {
+      const fields = document.getElementById('lead-fields');
+      const btn = document.querySelector('.toggle-btn');
+      const isHidden = fields.style.display === 'none';
+      fields.style.display = isHidden ? 'block' : 'none';
+      btn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
     }
-
-    // Initialize tier selection on page load
-    document.addEventListener('DOMContentLoaded', () => {
-      selectTier('full');
-    });
 
     // ===== FORM SUBMISSION =====
     async function handleFormSubmit(event) {
@@ -1770,17 +1836,20 @@
 
       const email = document.getElementById('email').value;
       const consentPrivacy = document.getElementById('consent-privacy').checked;
-      const consentSharing = selectedTier === 'full' ? document.getElementById('consent-sharing').checked : false;
       const submitBtn = document.querySelector('.cta-button[type="submit"]');
+
+      // Optional lead fields
+      const budget = document.getElementById('field-budget').value;
+      const timeline = document.getElementById('field-timeline').value;
+      const goal = document.getElementById('field-goal').value;
+      const experience = document.getElementById('field-experience').value;
+
+      // Detect locale
+      const locale = document.documentElement.lang || navigator.language || 'en';
 
       // Validation
       if (!email || !consentPrivacy) {
-        alert('Please fill in all required fields.');
-        return;
-      }
-
-      if (selectedTier === 'full' && !consentSharing) {
-        alert('Please consent to specialist introductions to access the Investor Package.');
+        alert('Please fill in all required fields and accept the data-sharing terms.');
         return;
       }
 
@@ -1789,16 +1858,24 @@
       submitBtn.textContent = 'Processing...';
       submitBtn.disabled = true;
 
-      // Determine which Kit form to submit to
-      const formId = selectedTier === 'full' ? CONFIG.KIT_FORM_FULL : CONFIG.KIT_FORM_FREE;
+      // All submissions go to the full Investor Package form
+      const formId = CONFIG.KIT_FORM_FULL;
       const kitUrl = `${CONFIG.KIT_BASE_URL}/${formId}/subscriptions`;
 
       try {
-        // Submit to Kit (ConvertKit) via their form endpoint
+        // Submit to Kit via their form endpoint
         const formData = new FormData();
         formData.append('email_address', email);
-        formData.append('fields[tier]', selectedTier);
-        formData.append('fields[consent_sharing]', consentSharing ? 'yes' : 'no');
+        formData.append('fields[tier]', 'full');
+        formData.append('fields[consent_sharing]', 'yes');
+        formData.append('fields[consent_ad_optimization]', 'yes');
+        formData.append('fields[locale]', locale);
+
+        // Optional lead qualification fields
+        if (budget) formData.append('fields[budget]', budget);
+        if (timeline) formData.append('fields[timeline]', timeline);
+        if (goal) formData.append('fields[goal]', goal);
+        if (experience) formData.append('fields[experience]', experience);
 
         const response = await fetch(kitUrl, {
           method: 'POST',
@@ -1810,7 +1887,7 @@
           throw new Error('Subscription failed');
         }
 
-        console.log('Kit subscription successful:', { email, tier: selectedTier, formId });
+        console.log('Kit subscription successful:', { email, formId, locale, budget, timeline, goal, experience });
       } catch (err) {
         console.error('Kit submission error:', err);
         submitBtn.textContent = originalText;
@@ -1819,12 +1896,14 @@
         return;
       }
 
-      // Show success message — file will be delivered via email by Kit
+      // Redirect to confirmation page
+      window.location.href = '/confirmed.html';
+
+      // Fallback: show success message if redirect fails
       const successMessage = document.getElementById('success-message');
-      const packageName = selectedTier === 'free' ? 'Market Snapshot' : 'Investor Package';
       successMessage.innerHTML = `
         <div class="success-message">
-          <strong>Check your inbox!</strong> Your ${packageName} is on its way to <strong>${email}</strong>. If you don't see it within a few minutes, check your spam folder.
+          <strong>Check your inbox!</strong> Your Investor Package is on its way to <strong>${email}</strong>. If you don't see it within a few minutes, check your spam folder.
         </div>
       `;
 
@@ -2042,7 +2121,7 @@
           <h3>Right to Opt-Out of Sale/Sharing</h3>
           <p>Lancer Point does not "sell" personal information in the traditional sense. However, sharing your email with Lima property specialists may constitute "sharing" under CCPA if they use it for targeted marketing. You can:</p>
           <ul>
-            <li>Opt out when selecting the free Market Snapshot (no data sharing occurs)</li>
+            <li>Opt out at any time by unsubscribing via the link in any email — this also removes you from ad audiences</li>
             <li>Request opt-out in writing to ${CONFIG.CONTACT_EMAIL} at any time</li>
             <li>Enable Global Privacy Control (GPC) in your browser</li>
           </ul>
@@ -2362,7 +2441,7 @@
         "name": "How do I get started with Lima property investment?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Download the free Market Snapshot for a quick overview, or get the full Investor Package for detailed analysis including the pricing calculator, rental yield breakdowns, and introductions to vetted Lima property specialists."
+          "text": "Download the free Investor Package for detailed analysis including the pricing calculator, rental yield breakdowns, a 27-slide presentation, and introductions to vetted Lima property specialists who can guide your purchase."
         }
       }
     ]
