@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0ZNZK4FBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y0ZNZK4FBF');
+    // Track conversion event
+    gtag('event', 'generate_lead', {
+      'event_category': 'engagement',
+      'event_label': 'email_confirmed'
+    });
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>You're In | Lancer Point</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #FDFCF9;
+      color: #6B6560;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { color: #B8965A; text-decoration: none; transition: opacity 0.3s ease; }
+    a:hover { opacity: 0.8; }
+
+    /* Header */
+    header {
+      background-color: rgba(253, 252, 249, 0.95);
+      border-bottom: 1px solid rgba(43, 40, 37, 0.1);
+      padding: 16px 24px;
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.125rem;
+      letter-spacing: 0.08em;
+      color: #2C2825;
+      text-transform: uppercase;
+    }
+
+    .logo span { color: #B8965A; }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 24px;
+    }
+
+    .card {
+      max-width: 620px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .check-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #B8965A 0%, #D4A24E 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 32px;
+      animation: scaleIn 0.5s ease-out;
+    }
+
+    .check-icon svg {
+      width: 36px;
+      height: 36px;
+      stroke: #fff;
+      stroke-width: 3;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    @keyframes scaleIn {
+      0% { transform: scale(0); opacity: 0; }
+      60% { transform: scale(1.1); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+      font-family: 'Newsreader', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #2C2825;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      font-size: 1.125rem;
+      color: #6B6560;
+      margin-bottom: 40px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .next-steps {
+      background: #fff;
+      border: 1px solid rgba(43, 40, 37, 0.1);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .next-steps h3 {
+      font-family: 'Newsreader', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #2C2825;
+      margin-bottom: 20px;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .step:last-child { margin-bottom: 0; }
+
+    .step-num {
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
+      border-radius: 50%;
+      background: #F5F0E8;
+      color: #B8965A;
+      font-weight: 600;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-text {
+      font-size: 0.95rem;
+      color: #6B6560;
+      padding-top: 3px;
+    }
+
+    .step-text strong { color: #2C2825; }
+
+    .btn-back {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #2C2825;
+      color: #FDFCF9;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      margin-bottom: 40px;
+    }
+
+    .btn-back:hover {
+      background: #3D3833;
+      opacity: 1;
+    }
+
+    /* Consent disclosure */
+    .consent-box {
+      background: #F9F7F3;
+      border: 1px solid rgba(43, 40, 37, 0.08);
+      border-radius: 10px;
+      padding: 24px;
+      text-align: left;
+    }
+
+    .consent-box h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #2C2825;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+    }
+
+    .consent-box p {
+      font-size: 0.85rem;
+      color: #8B7E79;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    .consent-box p:last-child { margin-bottom: 0; }
+
+    .consent-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 12px 0;
+    }
+
+    .consent-box ul li {
+      font-size: 0.85rem;
+      color: #8B7E79;
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+
+    .consent-box ul li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      color: #B8965A;
+    }
+
+    .consent-box a {
+      color: #B8965A;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(43, 40, 37, 0.1);
+      padding: 24px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.8rem;
+      color: #8B7E79;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 1.75rem; }
+      .subtitle { font-size: 1rem; }
+      .next-steps { padding: 24px; }
+      .consent-box { padding: 20px; }
+      .main { padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">Lancer <span>Point</span></a>
+      <a href="/" style="font-size:0.875rem; font-weight:500;">← Back to Guide</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="card">
+
+      <div class="check-icon">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+
+      <h1>You're in.</h1>
+      <p class="subtitle">Check your inbox — your Lima market data is on the way. It should arrive within a few minutes.</p>
+
+      <div class="next-steps">
+        <h3>What happens next</h3>
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-text"><strong>Check your email</strong> — your download link will arrive shortly. Check spam if you don't see it.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-text"><strong>Review the data</strong> — district-by-district pricing, yields, and volume trends are all included.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-text"><strong>Reach out with questions</strong> — reply to any email from us and we'll respond personally.</div>
+        </div>
+      </div>
+
+      <a href="/" class="btn-back">Explore the Full Guide</a>
+
+      <div class="consent-box">
+        <h4>How we use your information</h4>
+        <p>By providing your email address, you consent to the following uses of your information:</p>
+        <ul>
+          <li>Delivering the market materials you requested</li>
+          <li>Sending occasional updates about Lima's real estate market</li>
+          <li>Creating custom advertising audiences to show you relevant content across platforms (e.g., Google, Meta)</li>
+          <li>Measuring the effectiveness of our marketing through aggregated, non-identifiable analytics</li>
+        </ul>
+        <p>Your email may be shared with advertising platforms solely for the purpose of audience matching and ad optimization. It is hashed before upload and never sold to third parties.</p>
+        <p>You can unsubscribe at any time using the link in any email, which also removes you from ad audiences. Questions? Email <a href="mailto:hello@lancerpoint.co">hello@lancerpoint.co</a>.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lancer Point. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
