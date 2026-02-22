@@ -1245,7 +1245,7 @@
     <span class="hero-label">INVESTMENT RESEARCH · Q1 2025</span>
     <h1>Lima Real Estate Investment Guide</h1>
     <p class="hero-subtitle">
-      Six premium districts compared — 115,604 sales listings · 80,000+ rental records · Q1 2022 – Q3 2025
+      Six premium districts compared — 115,604 sales listings · 80,000+ rental records · Q1 2022 – Q4 2024
     </p>
 
     <div class="stat-boxes">
@@ -1373,7 +1373,7 @@
       <p class="callout-supporting">
         The 15–29% new-build price premium is not offset by proportionally higher rents. Resale apartments consistently deliver better rent-to-price ratios across all six districts.
       </p>
-      <p class="callout-source">Source: Analysis of 17,559 listings, Q1 2022 – Q3 2025</p>
+      <p class="callout-source">Source: Analysis of 17,559 listings, Q1 2022 – Q4 2024</p>
     </div>
   </section>
 
@@ -2394,7 +2394,7 @@
       "@type": "Organization",
       "name": "Lancer Point"
     },
-    "temporalCoverage": "2022-01-01/2025-09-30",
+    "temporalCoverage": "2022-01-01/2024-12-31",
     "spatialCoverage": {
       "@type": "Place",
       "name": "Lima, Peru",
@@ -2404,6 +2404,74 @@
       }
     },
     "keywords": "Lima real estate, property prices, rental yields, real estate analysis"
+  }
+  </script>
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lancer Point",
+    "url": "https://lancerpoint.co",
+    "email": "hello@lancerpoint.co",
+    "description": "Data-driven real estate investment research for Lima, Peru. District-level analysis of pricing, rental yields, and market trends.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Lima",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "Peru"
+      }
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@lancerpoint.co",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Spanish"]
+    }
+  }
+  </script>
+
+  <!-- Product/Offer Schema – Free Market Snapshot -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Lima Market Snapshot",
+    "description": "Free 2-page summary of Lima's six premium investment districts with median prices, gross yields, and rental volumes.",
+    "brand": {
+      "@type": "Organization",
+      "name": "Lancer Point"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://lancerpoint.co/#get-access"
+    }
+  }
+  </script>
+
+  <!-- Product/Offer Schema – Investor Package -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Lima Investor Package",
+    "description": "Complete 27-page market report with district deep-dives, new-build vs resale analysis, and interactive Excel pricing calculator covering Lima's six premium districts.",
+    "brand": {
+      "@type": "Organization",
+      "name": "Lancer Point"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://lancerpoint.co/#get-access"
+    }
   }
   </script>
 </body>
